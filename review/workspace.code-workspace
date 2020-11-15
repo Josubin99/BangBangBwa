@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "review",
+			"path": "."
+		},
+		{
+			"path": "..\\image"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "review"
+	}
+}
