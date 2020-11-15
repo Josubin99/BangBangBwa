@@ -20,7 +20,6 @@ html {
     padding :5px;
 }
 .topMenu {    
-    position: absolute;
     left :330px;
     top : 1px;
     margin : 26px;        
@@ -52,9 +51,8 @@ html {
  .login {                               
     text-decoration:none;   
     color: rgb(117, 115, 115);    
-    position : absolute;
-    margin: -70px;
-    right : 165px; 
+    margin: -55px -28px 0px 2px;
+    margin-left : 666px;
     font-size: 16px;                         
 }
 .login1 {
