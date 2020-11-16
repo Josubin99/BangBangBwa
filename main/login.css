@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'ChosunGu';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 html{
-    font-family:'ChosunGu';
+    font-family:'GmarketSansMedium';
 }
 
 .wrapper{
@@ -62,7 +62,7 @@ html{
     padding:10px 25px;
     width: 110px;
     margin-right:10px;
-    font-family:'ChosunGu';
+    font-family:'GmarketSansMedium';
 }
 
 #login_button:focus{
@@ -79,7 +79,7 @@ html{
     padding:10px 25px;
     width: 110px;
     margin-left:10px;
-    font-family:'ChosunGu';
+    font-family:'GmarketSansMedium';
 }
 
 #signup_button:focus{
