@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'MapoDPPA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoDPPA.woff') format('woff');
+    font-family: 'ChosunGu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 html{
-    font-family:'MapoDPPA';
+    font-family:'ChosunGu';
 }
 
 .wrapper{
@@ -62,7 +62,7 @@ html{
     padding:10px 25px;
     width: 110px;
     margin-right:10px;
-    font-family:'MapoDPPA';
+    font-family:'ChosunGu';
 }
 
 #login_button:focus{
@@ -79,7 +79,7 @@ html{
     padding:10px 25px;
     width: 110px;
     margin-left:10px;
-    font-family:'MapoDPPA';
+    font-family:'ChosunGu';
 }
 
 #signup_button:focus{
