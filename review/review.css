@@ -18,11 +18,12 @@ html {
     margin-top: 20px;
     margin-bottom:2px;
     padding :5px;
+    margin-right : -70px;
 }
 .topMenu {    
-    left :330px;
+    left : 150px;
     top : 1px;
-    margin : 26px;        
+    margin : 26px 0px 26px 40px;        
     height: 30px; 
     width: 1000px; 
 }
@@ -51,8 +52,8 @@ html {
  .login {                               
     text-decoration:none;   
     color: rgb(117, 115, 115);    
-    margin: -55px -28px 0px 2px;
-    margin-left : 666px;
+    margin: -55px -10px 0px 20px;
+    margin-left : 724px;
     font-size: 16px;                         
 }
 .login1 {
