@@ -139,3 +139,18 @@ html {
 .room_addr{
     margin : 10px 70px;
 }
+table{
+    margin-top : 30px;
+}
+.room_title{
+    margin-top:30px;
+    font-size: 25px;
+}
+.content{
+    padding: 0px 0px 15px 20px;
+}
+.content_detail{
+    padding: 0px 0px 15px 20px;
+    vertical-align : top;
+}
+
