@@ -130,6 +130,12 @@ html {
     outline:none;
     background-color: #B7D1A6;
 }
+.review_detail{
+    display : inline;
+}
 .room_review{
     margin : 40px 0px;
+}
+.room_addr{
+    margin : 10px 70px;
 }
