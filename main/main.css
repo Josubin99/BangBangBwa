@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'GmarketSansMedium';
+}
+.big{
+    width: 1000px;
+    margin : auto;
+}
+.box1{  
+    display : flex;
+    flex-direction : row;
+    flex-wrap : nowrap;
+}
+#logo{
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom:2px;
+    padding :5px;
+
+}
+.topMenu {  
+    margin-top : 26px;        
+    height: 30px; 
+    width: 1000px; 
+}
+.line{
+    color: rgb(63, 60, 60); 
+}
+.topMenu ul li {                       
+    list-style: none;           
+    display: inline-block;
+    background-color: rgb(255, 254, 254);              
+    line-height: 40px;    
+    vertical-align: middle;     
+    text-align: center;        
+}
+.topMenu .menuLink {                               
+    text-decoration:none;   
+    color: rgb(63, 60, 60);                             
+    width: 150px;    
+    display: inline-block;
+    font-size: 17px;                           
+}
+.topMenu .menuLink:hover {            
+    color: rgb(71, 33, 33);                   
+    background-color: #E7D1C4;    
+}
+ .login {                               
+    text-decoration:none;   
+    color: rgb(117, 115, 115);    
+    margin: -55px -28px 0px 2px;
+    margin-left : 659px;
+    font-size: 16px;                         
+}
+.login1 {
+    margin-right : 20px; 
+    text-decoration:none;
+}
+.login1:visited {
+    text-decoration-line:none;
+    color: rgb(117, 115, 115);   
+}
+.login2{
+    margin-left : 20px;
+    text-decoration:none;
+}
