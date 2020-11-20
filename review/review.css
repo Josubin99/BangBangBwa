@@ -139,7 +139,7 @@ html {
 .room_addr{
     margin : 10px 70px;
 }
-table{
+.detail_table{
     margin-top : 30px;
 }
 .room_title{
@@ -153,4 +153,53 @@ table{
     padding: 0px 0px 15px 20px;
     vertical-align : top;
 }
-
+.search_button{
+    float:right;
+    align-items: center;
+    background-color: #C69674;
+    border : none;
+    color : white;
+    margin-top : 6px;
+    width :80px;
+    height : 23px;
+}
+.write_table{
+    margin-top : 30px;
+}
+.line1{
+    margin-bottom : 5px;
+}
+.write_content{
+    width : 1000px;
+    height : 600px;
+    border-color : #C69674;
+    border-style:solid;
+    border-width :1.7px ;
+}
+.write_fileButton{
+    align-items: center;
+    background-color: #C69674;
+    border : none;
+    color : white;
+    margin: 20px 0px 0 00px;
+    width :100px;
+    height : 30px;
+    font-family: 'GmarketSansMedium';
+}
+.register_button{
+        background-color:#C69674;
+        border-radius: 30px;
+        border:none;
+        color:white;
+        cursor:pointer;
+        padding:10px 25px;
+        width: 110px;
+        font-family: 'GmarketSansMedium';
+}
+.write_registerBtn{
+    text-align:center;
+    margin : 10px 0px;
+}
+.write_table td:nth-child(1){
+    width : 150px;
+}
