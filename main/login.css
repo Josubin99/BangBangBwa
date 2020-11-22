@@ -83,6 +83,11 @@ html{
 }
 
 #signup_button:focus{
+    display: inline-block;
     outline:none;
     background-color: #B7D1A6;
+}
+
+#singupID_div{
+    display:inline-block;
 }
