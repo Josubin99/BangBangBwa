@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>방 구할 땐? 방방봐!</title>
-    <link rel="stylesheet" href="offering_list.css">
+    <link rel="stylesheet" href="offering_write.css">
     <script type="text/javascript" src="review_list.js"></script>
     <!--[if lt IE 9]>
-     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body class="body">
@@ -30,49 +30,32 @@
       </div>
     </div>
     <div><hr class="menuBar_line"></div>
-    <!--****************여기까지 메뉴 바*******************-->
+  <!--****************여기까지 메뉴 바*******************-->
 
     <div class="section">
-      <form name="selectOption" method="post">
-        <table class="table1" summary="상태, 보증금, 월세, 위치, 형태 선택지">
+      <form class="write_contents" action="index.html" method="post">
+        <table class="table3">
           <tbody>
             <tr>
-              <th width="15%">상태</th>
+              <th>상태</th>
               <td>
-                <input type="radio" name="state" value="0">양도
+                <input type="radio" name="state" value="0" checked>양도
                 <input type="radio" name="state" value="1">매물
               </td>
             </tr>
             <tr>
-              <th>보증금</th>
+              <th>가격대</th>
               <td>
-                <select name="deposit1" style="width: 140px;" title="보증금 시작 금액">
-                  <option value="0">전체</option>
-                  <option value="200">200 이상</option>
-                  <option value="500">500 이상</option>
-                  <option value="1000">1000 이상</option>
-                </select>
-                <select name="deposit2" style="width: 140px;" title="보증금 종료 금액">
-                  <option value="0">전체</option>
-                  <option value="200">200 이하</option>
-                  <option value="500">500 이하</option>
-                  <option value="1000">1000 이하</option>
-                </select>
+                <input type="text" class="textBox" name="deposit" placeholder="보증금"> 만원
+                <input type="text" class="textBox" name="rent" placeholder="월세"> 만원
+                <input type="text" class="textBox" name="alpha" placeholder="관리비"> 만원
               </td>
             </tr>
             <tr>
-              <th>월세</th>
+              <th>크기/층</th>
               <td>
-                <select name="rent1" style="width: 140px;" title="월세 시작 금액">
-                  <option value="0">전체</option>
-                  <option value="30">30 이상</option>
-                  <option value="60">60 이상</option>
-                </select>
-                <select name="rent2" style="width: 140px;" title="월세 종료 금액">
-                  <option value="0">전체</option>
-                  <option value="30">30 이하</option>
-                  <option value="60">60 이하</option>
-                </select>
+                <input type="text" class="textBox" name="squareMeter" value=""> ㎡
+                <input type="text" class="textBox" name="floor" value=""> 층
               </td>
             </tr>
             <tr>
@@ -148,103 +131,89 @@
                               <option value="104">청담동</option>
                       </select>
                   </div>
+                  <input type="text" class="textBox"name="address" placeholder="상세 주소">
                 </div>
               </td>
             </tr>
             <tr>
-              <th class="NoEndLine">형태</th>
-              <td class="NoEndLine">
-                <input type="checkbox" name="h_type1" value="y">원룸
-                <input type="checkbox" name="h_type1" value="y">투룸
-                <input type="checkbox" name="h_type1" value="y">쉐어하우스
-                <input type="checkbox" name="h_type1" value="y">고시원
+              <th>형태</th>
+              <td>
+                <input type="checkbox" name="shape" value="oneRoom">원룸
+                <input type="checkbox" name="shape" value="twoRoom">투룸
+                <input type="checkbox" name="shape" value="sharedRoom">쉐어하우스
+                <input type="checkbox" name="shape" value="gosiwon">고시원
+              </td>
+            </tr>
+            <tr>
+              <th>연락처</th>
+              <td>
+                <input type="text" class="textBox" name="phone">
+              </td>
+            </tr>
+            <tr>
+              <th>입주가능일</th>
+              <td>
+                <input type="text" class="textBox" name="start_day">
+              </td>
+            </tr>
+            <tr>
+              <th>거주 기간</th>
+              <td>
+                <input type="text" class="textBox" name="term_year"> 년
+                <input type="text" class="textBox" name="term_month"> 개월
+              </td>
+            </tr>
+            <tr>
+              <th>성별 제한</th>
+              <td>
+                <input type="radio" name="sex_limit" value="w">여자만 가능
+                <input type="radio" name="sex_limit" value="m">남자만 가능
+                <input type="radio" name="sex_limit" value="n">제한 없음
+              </td>
+            </tr>
+            <tr>
+              <th>옵션</th>
+              <td>
+                <div class="roomOpt">
+                  <input type="checkbox" name="room_option" value="bed">침대
+                  <input type="checkbox" name="room_option" value="desk">책상
+                  <input type="checkbox" name="room_option" value="closet">옷장
+                  <input type="checkbox" name="room_option" value="fridge">냉장고
+                  <input type="checkbox" name="room_option" value="storage">수납장
+                  <input type="checkbox" name="room_option" value="aircon">에어컨
+                  <input type="checkbox" name="room_option" value="washing">세탁기
+                  <input type="checkbox" name="room_option" value="shoes">신발장
+                  <input type="checkbox" name="room_option" value="tv">TV
+                  <br>
+                  <input type="checkbox" name="room_option" value="internet" id="NoIndent">인터넷
+                  <input type="checkbox" name="room_option" value="cctv">CCTV
+                  <input type="checkbox" name="room_option" value="elevator">엘리베이터
+                  <input type="checkbox" name="room_option" value="delever">택배함
+                  <input type="checkbox" name="room_option" value="microwave">전자레인지
+                  <input type="checkbox" name="room_option" value="pet">반려동물 가능
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>기타사항</th>
+              <td>
+                <textarea name="more_explanation" id="textArea" rows="8" cols="80" placeholder="500자 내로 입력하세요." maxlength=500></textarea>
+              </td>
+            </tr>
+            <tr>
+              <th>첨부파일</th>
+              <td>
+                <form id="FileAddBtn" method="post" action="upload" enctype="multipart/form-data">
+                  <input type="file" name="addFile" accept="image/*">
+                </form>
               </td>
             </tr>
           </tbody>
         </table>
-        <div id="btn_div">
-          <button type="submit" id="submit_btn">조회하기</button>
-        </div>
       </form>
-
-<!--여기까지 조회 옵션-->
-
-
-
-      <table class="table2">
-        <thead>
-          <tr>
-            <th>상태</th>
-            <th>가격대 (만 원)</th>
-            <th>위치</th>
-            <th>층</th>
-            <th>형태</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>굿</td>
-            <td>1000</td>
-            <td>서울특별시 노원구 공릉로 아브라카타브라 다 이뤄져라</td>
-            <td>3</td>
-            <td>다세대 주택</td>
-          </tr>
-          <tr>
-            <td>굿</td>
-            <td>1000</td>
-            <td>서울특별시 노원구 공릉로 101</td>
-            <td>반지층</td>
-            <td>원룸</td>
-          </tr>
-          <tr>
-            <td>굿</td>
-            <td>1000</td>
-            <td>서울특별시 노원구 공릉로 101</td>
-            <td>3</td>
-            <td>원룸</td>
-          </tr>
-          <tr>
-            <td>매물</td>
-            <td>1000</td>
-            <td>서울특별시 노원구 공릉로 101</td>
-            <td>3</td>
-            <td>원룸</td>
-          </tr>
-          <tr>
-            <td>양도</td>
-            <td>1000</td>
-            <td>서울특별시 노원구 공릉로 101</td>
-            <td>3</td>
-            <td>원룸</td>
-          </tr>
-          <tr>
-            <td>굿</td>
-            <td>1000</td>
-            <td>서울특별시 노원구 공릉로 101</td>
-            <td>3</td>
-            <td>원룸</td>
-          </tr>
-          <tr>
-            <td>굿</td>
-            <td>1000</td>
-            <td>서울특별시 노원구 공릉로 101</td>
-            <td>3</td>
-            <td>원룸</td>
-          </tr>
-          <tr>
-            <td class="NoEndLine">굿</td>
-            <td class="NoEndLine">1000</td>
-            <td class="NoEndLine">서울특별시 노원구 공릉로 101</td>
-            <td class="NoEndLine">3</td>
-            <td class="NoEndLine">원룸</td>
-          </tr>
-        </tbody>
-      </table>
-
-<!--search_result내에서만 페이지 넘어가게 만들기-->
-      <div id="page_move">
-        <  1 2 3 4 5  >
-      </div>
+    </div>
+    <div id="btn_div">
+      <button type="submit" id="submit_btn">등록</button>
     </div>
   </body>
 </html>

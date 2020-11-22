@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>방 구할 땐? 방방봐!</title>
+    <link rel="stylesheet" href="offering_detail.css">
+    <script type="text/javascript" src="review_list.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body class="body">
+    <div class="menuBar">
+      <img src="../image/logo.png" id="logo" alt="logo image">
+      <div class="topMenu">
+        <ul id="list">
+          <li><a class="menuLink" href="#">리뷰</a></li>
+          <li class="line">|</li>
+          <li><a class="menuLink" href="#">매물</a></li>
+          <li class="line">|</li>
+          <li><a class="menuLink" href="#">공지사항</a></li>
+        </ul>
+        <div class="login">
+          <ul>
+            <li><a class="login1" href="#">회원가입</a></li>
+            <li class="line" id="login_line">|</li>
+            <li><a class="login2" href="#">로그인</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div><hr class="menuBar_line"></div>
+  <!--****************여기까지 메뉴 바*******************-->
+    <div class="section">
+      <div id="map_and_img">
+        <img src="../image/map_KB.jpg" id="map_img" alt="진짜 지도로 바꿔야 됨">
+        <img src="../image/room5.jpg" id="room_img" alt="사진 정보">
+      </div>
+      <!--지도 이거 왜 안되냐-->
+
+      <div class="table_wrapper">
+        <table class="table4">
+          <tbody>
+            <tr>
+              <th>상태</th>
+              <td>
+                <input type="radio" name="state" value="0" checked>양도
+                <input type="radio" name="state" value="1">매물
+              </td>
+            </tr>
+            <tr>
+              <th>가격대</th>
+              <td>
+                보증금 1000만원/
+                월세 45만원/
+                관리비 4만원
+              </td>
+            </tr>
+            <tr>
+              <th>크기/층</th>
+              <td>
+                20㎡ / 2층
+              </td>
+            </tr>
+            <tr>
+              <th>위치</th>
+              <td>
+                서울특별시 노원구 공릉로 58길 130 누리학사
+              </td>
+            </tr>
+            <tr>
+              <th>형태</th>
+              <td>
+                <input type="checkbox" name="shape" value="oneRoom" checked>원룸
+                <input type="checkbox" name="shape" value="twoRoom">투룸
+                <input type="checkbox" name="shape" value="sharedRoom">쉐어하우스
+                <input type="checkbox" name="shape" value="gosiwon">고시원
+              </td>
+            </tr>
+            <tr>
+              <th>연락처</th>
+              <td>
+                010-1212-1004
+              </td>
+            </tr>
+            <tr>
+              <th>입주가능일</th>
+              <td>
+                12월 10일부터 가능
+              </td>
+            </tr>
+            <tr>
+              <th>거주 기간</th>
+              <td>
+                1년
+              </td>
+            </tr>
+            <tr>
+              <th>성별 제한</th>
+              <td>
+                여자만 가능
+              </td>
+            </tr>
+            <tr>
+              <th>옵션</th>
+              <td>
+                <div class="roomOpt">
+                  <input type="checkbox" name="room_option" value="bed" checked>침대
+                  <input type="checkbox" name="room_option" value="desk" checked>책상
+                  <input type="checkbox" name="room_option" value="closet" checked>옷장
+                  <input type="checkbox" name="room_option" value="fridge" checked>냉장고
+                  <input type="checkbox" name="room_option" value="storage" checked>수납장
+                  <input type="checkbox" name="room_option" value="aircon" checked>에어컨
+                  <input type="checkbox" name="room_option" value="washing" checked>세탁기
+                  <input type="checkbox" name="room_option" value="shoes" checked>신발장
+                  <input type="checkbox" name="room_option" value="tv">TV
+                  <br>
+                  <input type="checkbox" name="room_option" value="internet" id="NoIndent" checked>인터넷
+                  <input type="checkbox" name="room_option" value="cctv" checked>CCTV
+                  <input type="checkbox" name="room_option" value="elevator" checked>엘리베이터
+                  <input type="checkbox" name="room_option" value="delever" checked>택배함
+                  <input type="checkbox" name="room_option" value="microwave" checked>전자레인지
+                  <input type="checkbox" name="room_option" value="pet">반려동물 가능
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>기타사항</th>
+              <td id="etc">
+                2층인데 햇빛 잘 들어오고요 가구 완비. 몸만 들어오면 됨. 제가 12월 9일에 짐을 빼기 때문에 12월 10일부터 거주 가능합니다.
+                도보 10분 거리에 지하철 있고요, 버스 정류장 5분 거리, 편의점, 마트, 영화관 등등 다 있습니다. 집주인은 까다롭지 않고 프리해서 좋아요.
+                아 참 방음도 잘 됩니다.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+  </body>
+</html>
