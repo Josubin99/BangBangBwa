@@ -56,7 +56,7 @@ html {
     text-decoration:none;   
     color: rgb(117, 115, 115);    
     margin: -55px -28px 0px 2px;
-    margin-left : 659px;
+    margin-left : 680px;
     font-size: 16px;                         
 }
 .login1 {
@@ -71,3 +71,79 @@ html {
     margin-left : 20px;
     text-decoration:none;
 }
+
+.login2:visited{
+    color: rgb(117, 115, 115);   
+    text-decoration:none;
+}
+
+#main_image{
+    margin-top:5px;
+    width:100%;
+    height:350px;
+    margin-bottom:30px;
+}
+
+
+#review_table{
+    float:left;
+    width: 450px;
+
+}
+
+table#review_table td {
+    height:35px;
+    border-bottom: 1px solid #8E8A8A;
+    padding: 5px;
+    color: #696767;
+}
+
+#recent_tb_title{
+    text-align:left;
+    vertical-align: top;
+    height:50px;
+    color:#AC7A5C;
+}
+
+#offering_box{
+    float:right;
+}
+
+table#offering_box td{
+    text-align:center;
+}
+
+#offering_td{
+    background-color:rgb(231,209,196,0.5);
+    height:230px;
+    width:500px;
+}
+
+#offering_table{
+    margin:10px auto;
+}
+
+table#offering_table td{
+    text-align:center;
+    width:150px;
+    height:210px;
+}
+
+button{
+    background-color:white;
+    border-radius: 30px;
+    border: 3px solid #B7D1A6;
+    color:#000000;
+    cursor:pointer;
+    padding:10px 25px;
+    width: 150px;
+    font-family:'GmarketSansMedium';
+}
+
+button:focus{
+    outline:none;
+    background-color: #e0e2df;
+}
+
+
+

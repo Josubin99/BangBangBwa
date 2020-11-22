@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BBB Sign Up 🏠</title>
+    <link rel="stylesheet" href="signup.css"> 
+</head>
+<body>
+    <div class="wrapper">
+        <a href="main.html"><img id="logo" src="../image/logo.png" alt="BBB"></a>
+        <form class="login_form">
+            <table id="login_table">
+                <tr>
+                    <td style="text-align: left; padding-left:85px;">
+                        <label for="ID">아이디</label>
+                    </td>
+
+                    <td style="text-align: left; padding-left:85px;">
+                        <label for="Email">이메일 </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <div id="signupID_div">
+                            <input id="signupID" type="text" name="ID" class="login_input"/>
+                            <input id="btn" type="submit" value="중복확인" class="BTN"/>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="login_div">
+                            <input id="Email" type="text" class="login_input"/>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding-left:85px;">
+                        <label for="PW">비밀번호</label>
+                    </td>
+
+                    <td style="text-align: left; padding-left:85px;">
+                        <label for="CHK_PW">비밀번호 확인</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="login_div">
+                            <input id="PW" type="password" class="login_input"/>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="login_div">
+                            <input id="CHK_PW" type="password" class="login_input"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding-left:85px;">
+                        <label for="PHONE_NUM">전화번호 </label>
+                    </td>
+
+                    <td style="text-align: left; padding-left:85px;">
+                        <label for="GENDER">성별 </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="signupID_div">
+                            <input id="signupID" type="text" name="PHONE_NUM" class="login_input"/>
+                            <input id="btn" type="submit" value="본인인증" class="BTN"/>
+                        </div>                       
+                    </td>
+                    <td>
+                        <div class="login_div">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label><br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding-left:85px;">
+                        <label for="NAME">이름</label>
+                    </td>
+
+                    <td style="text-align: left; padding-left:85px;">
+                        <label for="BIRTH">생년월일</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="login_div">
+                            <input id="NAME" type="text" class="login_input"/>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="login_div">
+                            <input id="BIRTH" type="date" class="login_input"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="signup_td" colspan="2" height="80px">
+                        <div class="button_div">
+                            <button id="signup_button">회원가입</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
