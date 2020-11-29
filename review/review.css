@@ -125,6 +125,10 @@ html {
     width: 65px;
     margin-left : 450px;
     font-family: 'GmarketSansMedium';
+    position:fixed;
+    left:auto;
+    bottom:20px;
+    box-shadow : 5px 5px 5px gray;
 }
 .review_button:focus{
     outline:none;
@@ -164,14 +168,16 @@ html {
     height : 23px;
 }
 .write_table{
-    margin-top : 30px;
+    margin : 20px auto 10px auto;
 }
 .line1{
     margin-bottom : 5px;
 }
 .write_content{
-    width : 1000px;
+    width : 85%;
     height : 600px;
+    margin : 10px auto 20px auto;
+    padding : 10px 20px;
     border-color : #C69674;
     border-style:solid;
     border-width :1.7px ;
@@ -199,7 +205,12 @@ html {
 .write_registerBtn{
     text-align:center;
     margin : 10px 0px;
+    font-family: 'GmarketSansMedium';
 }
-.write_table td:nth-child(1){
-    width : 150px;
+
+.detail_table{
+    margin : 50px auto;
+}
+.detail_table td:nth-child(5){ 
+    
 }

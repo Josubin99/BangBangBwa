@@ -9,7 +9,7 @@
         <img src="../image/logo.png" id="logo" alt="logo image">
             <div class="topMenu">
                 <ul id="list">
-                    <li><a class="menuLink" href="#">리뷰</a></li>
+                    <li><a class="menuLink" href="#">리 뷰</a></li>
                     <li class="line">|</li>
                     <li><a class="menuLink" href="#">매물</a></li>
                     <li class="line">|</li>
@@ -31,7 +31,7 @@
             <td>구해줘 홈즈에 나온 바로 그 방!</td> 
         </tr>
         <tr>
-            <td colspan="3"><img src="../image/line1.png" width="1000px" height="1.35px" class="line1"></td>
+            <td colspan="3"><img src="../image/line1.png" width="900px" height="1.5px" class="line1"></td>
         </tr>
         <tr>
             <td>Location</td>
@@ -39,16 +39,18 @@
             <td><button class="search_button">search</button></td>
         </tr>
         <tr>
-            <td colspan="3"><img src="../image/line1.png" width="1000px" height="1.35px" class="line1"></td>
+            <td colspan="3"><img src="../image/line1.png" width="900px" height="1.5px" class="line1"></td>
+        </tr>
+        <tr>
+            <td colspan="3"> 
+                <img src="../image/rank.png" id="rank" alt="rank">
+                <img src="../image/rank.png" id="rank" alt="rank">
+                <img src="../image/rank.png" id="rank" alt="rank">
+                <img src="../image/rank.png" id="rank" alt="rank">
+                <img src="../image/rank_blank.png"id="rank" alt="rank">
+            </td>
         </tr>
     </table>
-    <div>                
-        <img src="../image/rank.png" id="rank" alt="rank">
-        <img src="../image/rank.png" id="rank" alt="rank">
-        <img src="../image/rank.png" id="rank" alt="rank">
-        <img src="../image/rank.png" id="rank" alt="rank">
-        <img src="../image/rank_blank.png"id="rank" alt="rank">
-    </div>
     <div class="write_content">
         전체적으로 집이 방음이 잘 돼서 조용합니다. 
         바퀴벌레가 가끔 나오니까 조심하세요
@@ -56,10 +58,19 @@
         다만 관리비가 시설에 비해 많이 나오네요.
         옵션은 풀옵션이라 몸만 오시면 될 거 같습니다. 
     </div>
-    <div>
-        <button class="write_fileButton">첨부파일</button>
-        <img src="../image/line1.png" width="1000px" height="1.5px" class="write_line1">
-    </div>
+    <table class="file_table">
+        <tr>
+            <td>첨부파일</td>
+            <td>
+                <form class="FileBtn" method="post" action="upload" enctype="multipart/form-data">
+                <input type="file" name="addFile" accept="image/*">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5"><img src="../image/line1.png" width="895px" height="1.5px" class="write_line1"></td>
+        </tr>
+    </table>
     <div class="write_registerBtn">
         <button class="register_button">등록</button>
     </div>
