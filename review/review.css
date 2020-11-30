@@ -211,6 +211,17 @@ html {
 .detail_table{
     margin : 50px auto;
 }
-.detail_table td:nth-child(5){ 
-    
+.detail_rank{
+    width : 200px;
+}
+.detail_addr{
+    font-size : 13px;
+}
+.detail_title{
+    font-size : 30px;
+}
+.detail{
+    width : 500px;
+    margin : 0px auto 10px auto;
+    line-height : 50px;
 }
