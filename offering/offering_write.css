@@ -10,31 +10,44 @@ html{
 }
 
 body{
-    width: 1000px;
+  /*width: 넣어야 하나?*/
+    padding-top: 80px;
     margin: auto;
 }
 
 .menuBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    padding: 2px;
+    background: white;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #b7d1a6;
+    margin-left: auto;
+    margin-right: auto;
+    /*flex-direction: row;
+    flex-wrap: nowrap;*/
 }
 
 #logo{
     width: 100px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 2px;
     margin-bottom: 2px;
     padding: 5px;
-    margin-right: -70px;
+    margin-left: 10%;
 }
 
 .topMenu{
-  left: 150px;
-  top: 1px;
-  margin: 26px 0px 26px 40px;
-  height: 30px;
-  width: 1000px;
+  margin-top: 10px;
+  margin-left: -30px;
+  height: 60px;
+  width: 90%;
 }
 
 .line{
@@ -75,8 +88,9 @@ a:visited {
 .login{
   text-decoration: none;
   color: rgb(117, 115, 115);
-  margin: -55px -20px 0px 15px;
-  margin-left: 718px;
+  justify-content: space-between;
+  align-items: center;
+  margin: -55px -15px 0px 900px;
   font-size: 16px;
 }
 
@@ -90,15 +104,10 @@ a:visited {
   text-decoration: none;
 }
 
-.menuBar_line{
-  border: 0;
-  background-color: #b7d1a6;
-  height: 3px;
-}
 /*----------------여기까지 위에 메뉴바 css------------------*/
 
 .table3{
-  width: 85%;
+  width: 65%;
   border-collapse: collapse;
   border-top: 3px solid #B7D1A6;
   border-bottom: 3px solid #B7D1A6;
