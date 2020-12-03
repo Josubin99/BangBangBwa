@@ -8,27 +8,25 @@
 html {
     font-family: 'GmarketSansMedium';
 }
-.big{
-    width: 1000px;
-    margin : auto;
-}
+
 .box1{  
     display : flex;
     flex-direction : row;
     flex-wrap : nowrap;
 }
+
 #logo{
     width: 100px;
     height: 50px;
     margin-top: 20px;
     margin-bottom:2px;
     padding :5px;
-
 }
+
 .topMenu {  
-    margin-top : 26px;        
-    height: 30px; 
-    width: 1000px; 
+    margin-top : 26px; 
+    width:100%;       
+    height: 30px;  
 }
 .line{
     color: rgb(63, 60, 60); 
@@ -77,11 +75,34 @@ html {
     text-decoration:none;
 }
 
-#main_image{
+#main_scroll_1{
     margin-top:5px;
+    margin-bottom: 0px;
+    height:500px;
     width:100%;
-    height:350px;
-    margin-bottom:30px;
+    background-color:#b7d1a6;
+    position: relative;
+}
+
+#BBB{
+    width:350px;
+    height:150px;
+    position: absolute;
+    left:150px;
+    top:200px;
+}
+
+#BBB_Phone{
+    width:400px;
+    height:450px;
+    position: absolute;
+    left:600px;
+    top:50px;
+}
+
+#bottom{
+    width:1000px;
+    margin:auto;
 }
 
 
