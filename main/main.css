@@ -9,70 +9,86 @@ html {
     font-family: 'GmarketSansMedium';
 }
 
-.box1{  
-    display : flex;
-    flex-direction : row;
-    flex-wrap : nowrap;
+.menuBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 #logo{
     width: 100px;
     height: 50px;
     margin-top: 20px;
-    margin-bottom:2px;
-    padding :5px;
+    margin-bottom: 2px;
+    padding: 5px;
+    margin-right: -70px;
 }
 
-.topMenu {  
-    margin-top : 26px; 
-    width:100%;       
-    height: 30px;  
+.topMenu{
+  left: 150px;
+  top: 1px;
+  margin: 26px 0px 26px 40px;
+  height: 30px;
+  width: 1000px;
 }
+
 .line{
-    color: rgb(63, 60, 60); 
-}
-.topMenu ul li {                       
-    list-style: none;           
-    display: inline-block;
-    background-color: rgb(255, 254, 254);              
-    line-height: 40px;    
-    vertical-align: middle;     
-    text-align: center;        
-}
-.topMenu .menuLink {                               
-    text-decoration:none;   
-    color: rgb(63, 60, 60);                             
-    width: 150px;    
-    display: inline-block;
-    font-size: 17px;                           
-}
-.topMenu .menuLink:hover {            
-    color: rgb(71, 33, 33);                   
-    background-color: #E7D1C4;    
-}
- .login {                               
-    text-decoration:none;   
-    color: rgb(117, 115, 115);    
-    margin: -55px -28px 0px 2px;
-    margin-left : 680px;
-    font-size: 16px;                         
-}
-.login1 {
-    margin-right : 20px; 
-    text-decoration:none;
-}
-.login1:visited {
-    text-decoration-line:none;
-    color: rgb(117, 115, 115);   
-}
-.login2{
-    margin-left : 20px;
-    text-decoration:none;
+  color: rgb(63, 60, 60);
 }
 
-.login2:visited{
-    color: rgb(117, 115, 115);   
-    text-decoration:none;
+#login_line{
+  color: rgb(117, 115, 115);
+}
+
+.topMenu ul li{
+  list-style: none;
+  display: inline-block;
+  background-color: rgb(255, 254, 254);
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.topMenu .menuLink{
+  text-decoration:none;
+  color: rgb(63, 60, 60);
+  width: 150px;
+  display: inline-block;/*선택할 때 글씨뿐만 아니라*/
+  font-size: 17px;
+}
+
+.topMenu .menuLink:hover{
+  color: rgb(71, 33, 33);
+  background-color: #E7D1C4;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(117, 115, 115);
+}
+
+.login{
+  text-decoration: none;
+  color: rgb(117, 115, 115);
+  margin: -55px -20px 0px 15px;
+  margin-left: 718px;
+  font-size: 16px;
+}
+
+.login1{
+  margin-right: 19px;
+  text-decoration: none;
+}
+
+.login2{
+  margin-left: 19px;
+  text-decoration: none;
+}
+
+.menuBar_line{
+  border: 0;
+  background-color: #b7d1a6;
+  height: 3px;
 }
 
 #main_scroll_1{
