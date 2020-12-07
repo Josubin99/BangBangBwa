@@ -1,8 +1,10 @@
 <!DOCTYPE html> 
 <html>
 <head>
+    <meta charset="UTF=8">
     <link rel="stylesheet" href="review.css"> 
-    <script type="text/javascript" src="sojaeji.js"></script>    
+    <script src="./review_list.js"></script>
+    <script src="//code.jquery.com/jquery-latest.min.js"></script> 
 </head>
 <body class="big">
     <div class="box1">  
@@ -26,8 +28,10 @@
     </div>
     <div class="list_content">
         <img src="../image/line.png" class="line1" alt="line" width="1000px" height="3px">
-        <select name="sido1" id="sido1"></select>
-        <select name="gugun1" id="gugun1"></select>
+        <select name="sido" id="sido" onchange="getGugun(this.value);" >
+            <option value="">---시도---</option> 
+        </select> 
+        <select name="gugun1" id="gugun"></select>
         <div class="room">
             <div class="room_col1">
                 <img src="../image/room1.png" id="room" alt="room">
@@ -38,8 +42,8 @@
                         <img src="../image/rank.png" id="rank" alt="rank">
                         <img src="../image/rank.png" id="rank" alt="rank">
                         <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank_blank.png" id="rank" alt="rank">
-                        <img src="../image/rank_blank.png"id="rank" alt="rank">
+                        <img src="../image/rank.png" id="rank" alt="rank">
+                        <img src="../image/rank.png"id="rank" alt="rank">
                     </div>
                     <div class="rank2">
                         <img src="../image/rank.png" id="rank" alt="rank">
@@ -71,13 +75,13 @@
                         <img src="../image/rank.png" id="rank" alt="rank">
                         <img src="../image/rank.png" id="rank" alt="rank">
                         <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank_blank.png" id="rank" alt="rank">
-                        <img src="../image/rank_blank.png"id="rank" alt="rank">
+                        <img src="../image/rank.png" id="rank" alt="rank">
+                        <img src="../image/rank.png"id="rank" alt="rank">
                     </div>
                     <div class="rank2">
                         <img src="../image/rank.png" id="rank" alt="rank">
                         <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
+                        <img src="../image/rank_blank.png" id="rank" alt="rank">
                         <img src="../image/rank_blank.png" id="rank" alt="rank">
                         <img src="../image/rank_blank.png"id="rank" alt="rank">
                     </div>
@@ -85,7 +89,7 @@
                         <img src="../image/rank.png" id="rank" alt="rank">
                         <img src="../image/rank.png" id="rank" alt="rank">
                         <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank_blank.png" id="rank" alt="rank">
+                        <img src="../image/rank.png" id="rank" alt="rank">
                         <img src="../image/rank_blank.png"id="rank" alt="rank">
                     </div>
                 </div>
@@ -97,6 +101,7 @@
             </div>
         </div>       
         <div class="review_button"><a href="../review/review_write.html">리뷰작성</a></div>
+
     </div>  
 </body>
 </html>

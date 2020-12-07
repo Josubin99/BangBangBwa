@@ -96,6 +96,7 @@ html {
     width:25px;
     height:25px;
     padding : 5px;
+    background: url('../image/rank.png')
 }
 .rank1{
     width : 300px;
@@ -241,4 +242,39 @@ html {
     width : 500px;
     margin : 0px auto 10px auto;
     line-height : 50px;
+}
+.wrap{
+    max-width: 400px;
+    margin: 0 auto; /* 화면 가운데로 */
+    background-color: #fff;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.rating .rate_radio {
+    position: relative;
+    display: inline-block;
+    z-index: 20;
+    opacity: 0.001;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    vertical-align: top;
+    display: none;
+}
+.rating .rate_radio + label {
+    position: relative;
+    display: inline-block;
+    margin : 0 1px;
+    z-index: 10;
+    width: 35px;
+    height: 35px;
+    background-image: url('../image/rank_blank.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    cursor: pointer;
+}
+.rating .rate_radio:checked + label {
+    background-image: url("../image/rank.png");
 }
