@@ -5,99 +5,184 @@
     font-style: normal;
 }
 
+@font-face{
+  src:url("../image/배달의민족주아체.ttf");
+  font-family:"jua"
+}
+
 html {
     font-family: 'GmarketSansMedium';
 }
 
-.box1{  
-    display : flex;
-    flex-direction : row;
-    flex-wrap : nowrap;
+.body{
+    /*width: 넣어야 하나?*/
+      padding-top: 80px;
+      margin: auto;
+  }
+
+.menuBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    padding: 2px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #b7d1a6;
+    margin-left: auto;
+    margin-right: auto;
+    /*flex-direction: row;
+    flex-wrap: nowrap;*/
 }
 
 #logo{
     width: 100px;
     height: 50px;
-    margin-top: 20px;
-    margin-bottom:2px;
-    padding :5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+    margin-left: 10%;
 }
 
-.topMenu {  
-    margin-top : 26px; 
-    width:100%;       
-    height: 30px;  
+.topMenu{
+  margin-top: 10px;
+  margin-left: -30px;
+  height: 60px;
+  width: 90%;
 }
+
 .line{
-    color: rgb(63, 60, 60); 
-}
-.topMenu ul li {                       
-    list-style: none;           
-    display: inline-block;
-    background-color: rgb(255, 254, 254);              
-    line-height: 40px;    
-    vertical-align: middle;     
-    text-align: center;        
-}
-.topMenu .menuLink {                               
-    text-decoration:none;   
-    color: rgb(63, 60, 60);                             
-    width: 150px;    
-    display: inline-block;
-    font-size: 17px;                           
-}
-.topMenu .menuLink:hover {            
-    color: rgb(71, 33, 33);                   
-    background-color: #E7D1C4;    
-}
- .login {                               
-    text-decoration:none;   
-    color: rgb(117, 115, 115);    
-    margin: -55px -28px 0px 2px;
-    margin-left : 680px;
-    font-size: 16px;                         
-}
-.login1 {
-    margin-right : 20px; 
-    text-decoration:none;
-}
-.login1:visited {
-    text-decoration-line:none;
-    color: rgb(117, 115, 115);   
-}
-.login2{
-    margin-left : 20px;
-    text-decoration:none;
+  color: rgb(63, 60, 60);
 }
 
-.login2:visited{
-    color: rgb(117, 115, 115);   
-    text-decoration:none;
+#login_line{
+  color: rgb(117, 115, 115);
+}
+
+.topMenu ul li{
+  list-style: none;
+  display: inline-block;
+  background-color: rgb(255, 254, 254);
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.topMenu .menuLink{
+  text-decoration:none;
+  color: rgb(63, 60, 60);
+  width: 150px;
+  display: inline-block;/*선택할 때 글씨뿐만 아니라*/
+  font-size: 17px;
+}
+
+.topMenu .menuLink:hover{
+  color: rgb(71, 33, 33);
+  background-color: #E7D1C4;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(117, 115, 115);
+}
+
+.login{
+  text-decoration: none;
+  color: rgb(117, 115, 115);
+  justify-content: space-between;
+  align-items: center;
+  margin: -55px -15px 0px 900px;
+  font-size: 16px;
+}
+
+.login1{
+  margin-right: 19px;
+  text-decoration: none;
+}
+
+.login2{
+  margin-left: 19px;
+  text-decoration: none;
 }
 
 #main_scroll_1{
-    margin-top:5px;
+    background-image: url(../image/main_img/main_scroll_1.png); 
+    background-repeat:no-repeat; 
+    background-size:1670px 780px;
+    background-color: #fab236;
     margin-bottom: 0px;
-    height:500px;
+    height:700px;
     width:100%;
-    background-color:#b7d1a6;
     position: relative;
 }
 
-#BBB{
-    width:350px;
-    height:150px;
-    position: absolute;
-    left:150px;
-    top:200px;
+#hashtag{
+  position: absolute;
+  width:600px;
+  height:100px;
+  top:80px;
+  left:95px;
 }
 
-#BBB_Phone{
-    width:400px;
-    height:450px;
-    position: absolute;
-    left:600px;
-    top:50px;
+#BBB{
+  position: absolute;
+  width:650px;
+  height:450px;
+  top:165px;
+  left:70px;
+
+}
+
+#Best{
+  position: absolute;
+  width:500px;
+  height:100px;
+  top:510px;
+  left:130px;
+}
+
+#chat1{
+  width:230px;
+  height:60px;
+  position: absolute;
+  left:1280px;
+  top:50px;
+}
+
+#chat2{
+  position:absolute;
+  width:120px;
+  height:45px;
+  top:140px;
+  left:1020px;
+}
+
+#chat3{
+  position:absolute;
+  top:170px;
+  left:989px;
+  width: 330px;
+  height:370px;
+}
+
+#chat4{
+  position:absolute;
+  top:535px;
+  left:995px;
+  width:500px;
+  height:100px;
+}
+
+#main_scroll_2{
+  margin-bottom: 0px;
+  height:800px;
+  width:100%;
+  background-color:#fab236;;
+  position: relative;
 }
 
 #bottom{
