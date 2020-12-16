@@ -17,6 +17,7 @@ body{
 
 .menuBar{
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
@@ -105,12 +106,14 @@ a:visited {
 
 
 /*----------------여기까지 위에 메뉴바 css------------------*/
+li { list-style: none; }
+
 .detail_table{
     margin : 50px auto;
+    width : 500px;
+    position:relative; z-index: 1;
 }
-.detail_table{
-    margin-top : 30px;
-}
+
 .detail_rank{
     width : 200px;
 }
