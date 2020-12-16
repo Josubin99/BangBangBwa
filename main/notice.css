@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+  src:url("../image/배달의민족주아체.ttf");
+  font-family:"jua"
+}
+
+html {
+    font-family: 'GmarketSansMedium';
+}
+
+.body{
+    /*width: 넣어야 하나?*/
+      padding-top: 80px;
+      margin: auto;
+  }
+
+  .menuBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    padding: 2px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #b7d1a6;
+    margin-left: auto;
+    margin-right: auto;
+    /*flex-direction: row;
+    flex-wrap: nowrap;*/
+}
+
+#logo{
+    width: 100px;
+    height: 50px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+    margin-left: 150px;
+}
+
+.topMenu{
+  margin-top: 10px;
+  margin-left: -30px;
+  height: 60px;
+  width: 90%;
+}
+
+#login_line{
+  color: rgb(117, 115, 115);
+}
+
+.topMenu ul li{
+  list-style: none;
+  display: inline-block;
+  background-color: rgb(255, 254, 254);
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.topMenu .menuLink{
+  text-decoration:none;
+  color: rgb(63, 60, 60);
+  width: 150px;
+  display: inline-block;/*선택할 때 글씨뿐만 아니라*/
+  font-size: 17px;
+}
+
+.topMenu .menuLink:hover{
+  color: rgb(71, 33, 33);
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(117, 115, 115);
+}
+
+.login{
+  text-decoration: none;
+  color: rgb(117, 115, 115);
+  justify-content: space-between;
+  align-items: center;
+  margin: -55px -15px 0px 900px;
+  font-size: 16px;
+}
+
+.login1{
+  margin-right: 19px;
+  text-decoration: none;
+}
+
+.login2{
+  margin-left: 19px;
+  text-decoration: none;
+}
+
+/*----------------여기까지 위에 메뉴바 css------------------*/
+.notice_background{
+    font-family: 'GmarketSansMedium';
+    line-height : 35px;
+    padding : 20px;
+    width : 750px;
+    height : 360px;
+    background-color :rgb(216, 216, 216);
+    margin : 70px auto;
+    border-radius: 10px;
+}
+
+/* Shared for all accordion types */
+.accordion {
+    margin:0px auto;
+    font-size:14px;
+    border-radius:10px;
+    width:780px;
+    padding:10px;
+    background:#fff;
+}
+.accordion ul {
+    list-style:none;
+    margin:0;
+    padding:0;    
+}
+.accordion li {
+    margin:0;
+    padding:0;
+}
+.accordion [type=radio], .accordion [type=checkbox] {
+    display:none;
+}
+.accordion label {
+    display:block;
+    font-size:16px;
+    line-height:28px;
+    background:#B7D1A6;
+    color:#000000;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+    font-weight:700;
+    cursor:pointer;
+    text-transform:uppercase;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+}
+.accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
+    background:#B7D1A6;
+    color:#FFF;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.5)
+}
+.accordion .content {
+    padding:0 10px;
+    overflow:hidden;
+    border :#B7D1A6;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+}
+/* Vertical */
+.vertical ul li {
+    overflow:hidden;
+    margin:0 0 1px;
+}
+.vertical ul li label {
+    padding:10px;
+}
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+    border-bottom:0;
+}
+.vertical ul li label:hover {
+    border: none; /* We don't want the border to disappear on hover */
+}
+.vertical ul li .content {
+    height:10px;
+    border-top:10px;
+}
+.vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
+    height:300px;
+    border:1px solid rgb(117, 115, 115);
+}
+footer{  
+    margin-top : 40px;
+    left:0px; 
+    bottom:0px; 
+    height:130px; 
+    width:100%; 
+    background: rgb(238, 238, 238);   
+    color:rgb(75, 75, 75); 
+}
+.footer_content{
+    line-height : 25px;
+    padding-left : 520px;
+    padding-top : 13px;
+}
