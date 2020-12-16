@@ -20,7 +20,7 @@ html {
       margin: auto;
   }
 
-.menuBar{
+  .menuBar{
     position: fixed;
     top: 0;
     left: 0;
@@ -53,10 +53,6 @@ html {
   margin-left: -30px;
   height: 60px;
   width: 90%;
-}
-
-.line{
-  color: rgb(63, 60, 60);
 }
 
 #login_line{
@@ -108,6 +104,8 @@ a:visited {
   margin-left: 19px;
   text-decoration: none;
 }
+
+/*----------------여기까지 위에 메뉴바 css------------------*/
 
 #main_scroll_1{
     background-image: url(../image/main_img/main_scroll_1.png); 
@@ -179,10 +177,167 @@ a:visited {
 
 #main_scroll_2{
   margin-bottom: 0px;
-  height:800px;
+  height:1300px;
   width:100%;
   background-color:#fab236;;
   position: relative;
+}
+
+#man1{
+  width:270px;
+  height:270px;
+  position: absolute;
+  top:170px;
+  left:150px;
+}
+
+#man2{
+  width:270px;
+  height:270px;
+  position: absolute;
+  top:170px;
+  left:625px;
+}
+
+#man3{
+  width:270px;
+  height:270px;
+  position: absolute;
+  left:1100px;
+  top:170px;
+}
+
+#help{
+  width:450px;
+  height:450px;
+  position: absolute;
+  top:750px;
+  left:520px;
+}
+
+
+a span {
+  position: absolute;
+  top: 600px;
+  left: 49%;
+  width: 40px;
+  height: 40px;
+  margin-left: -12px;
+  border-left: 8px solid rgb(255, 217, 195);
+  border-bottom: 8px solid rgb(255, 217, 195);
+  border-radius: 5px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+
+#span2{
+  position: absolute;
+  top:625px;
+  border-left:8px solid rgb(255, 193, 157);
+  border-bottom: 8px solid rgb(255, 193, 157);
+  border-radius: 5px;
+}
+
+#span3{
+  position: absolute;
+  top:650px;
+  border-left: 8px solid rgb(255, 156, 98);
+  border-bottom: 8px solid rgb(255, 156, 98);
+  border-radius: 5px;
+}
+
+a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+@-webkit-keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#main_scroll_3{
+  background-repeat:no-repeat; 
+  background-size:1670px 780px;
+  background-color: #ffdb83;
+  margin-bottom: 0px;
+  height:1500px;
+  width:100%;
+  position: relative;
+}
+
+#reviewer{
+  width:300px;
+  height:100px;
+  position: absolute;
+  left:100px;
+  top:150px;
+}
+
+#one{
+  width:320px;
+  height:320px;
+  position: absolute;
+  top:300px;
+  left:90px;
+}
+
+#two{
+  width:340px;
+  height:320px;
+  position: absolute;
+  top:300px;
+  left:610px;
+}
+
+#three{
+  width:320px;
+  height:320px;
+  position: absolute;
+  top:300px;
+  left:1050px;
+}
+
+#reviewee{
+  width:300px;
+  height:100px;
+  position: absolute;
+  left:100px;
+  top:800px;
+
 }
 
 #bottom{
