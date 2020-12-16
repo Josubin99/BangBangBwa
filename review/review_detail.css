@@ -103,55 +103,31 @@ a:visited {
   text-decoration: none;
 }
 
+
 /*----------------여기까지 위에 메뉴바 css------------------*/
-
-#map_and_img{
-  margin-top: 40px;
-  text-align: center;
+.detail_table{
+    margin : 50px auto;
 }
-
-#map_img{
-  width: 390px;
-  height: 300px;
+.detail_table{
+    margin-top : 30px;
 }
-
-#room_img{
-  width: 450px;
-  height: 300px;
+.detail_rank{
+    width : 200px;
 }
-
-.table4{
-  width: 1000px;
-  border-collapse: collapse;
-  border-top: 3px solid #B7D1A6;
-  border-bottom: 3px solid #B7D1A6;
-  font-size: 17px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-bottom: 30px;
-  margin-left: auto;
+.detail_addr{
+    font-size : 13px;
 }
-
-.table4 th{
-  width: 15%;
-  background-color: #E2DFDF;
-  border-bottom: 2px solid #c8c8c8;
-  padding: 15px 0px 11px 0px;
+.detail_title{
+    font-size : 30px;
 }
-
-.table4 td{
-  border-bottom: 2px solid #c8c8c8;
-  padding: 15px 10px;
+.detail{
+    width : 500px;
+    margin : 0px auto 10px auto;
+    line-height : 50px;
 }
-
-.table4 input:not(:first-child){
-  margin-left: 15px;
-}/*table3 내의 input 요소들에서 각 첫번째 input요소들 빼고 마진값 설정*/
-
-#NoIndent{/*옵션에서 '인터넷'이 삐뚤어져서 수정*/
-  margin-left: 4px;
-}
-
-#etc{
-  line-height: 40px;
+#rank{
+    width:25px;
+    height:25px;
+    padding : 5px;
+    background: url('../image/rank.png')
 }
