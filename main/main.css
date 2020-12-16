@@ -339,6 +339,31 @@ a span:nth-of-type(3) {
 
 }
 
+#one_1{
+  width:320px;
+  height:320px;
+  position: absolute;
+  top:950px;
+  left:90px;
+}
+
+
+#four{
+  width:340px;
+  height:320px;
+  position: absolute;
+  top:950px;
+  left:610px;
+}
+
+#five{
+  width:320px;
+  height:320px;
+  position: absolute;
+  top:950px;
+  left:1050px;
+}
+
 #bottom{
     width:1000px;
     margin:auto;
