@@ -4,6 +4,8 @@
 <title>BBB 🏠</title>
     <link rel="stylesheet" href="../review/review_write.css">
     <script type="text/javascript" src="../review/review_list.js"></script>
+    <script type="text/javascript" src="../review/review_write.js"></script>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 <body class="body">
     <script type="text/javascript" src="./jquery.fade-in.js"></script>
@@ -37,8 +39,17 @@
         </tr>
         <tr>
             <td>Location</td>
-            <td>서울시 노원구 공릉동 58길 123번지</td> 
-            <td><button class="search_button">search</button></td>
+            <td>
+                <input type="text" id="sample4_postcode" placeholder="우편번호">
+                <input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
+                <input type="text" id="sample4_roadAddress" placeholder="도로명주소">
+                <input type="text" id="sample4_jibunAddress" placeholder="지번주소">
+                <span id="guide" style="color:#999;display:none"></span>
+                <input type="text" id="sample4_detailAddress" placeholder="상세주소">
+                <input type="text" id="sample4_extraAddress" placeholder="참고항목">
+
+            </td> 
+            <td><button class="search_button" onclick="button1_click()">search</button></td>
         </tr>
         <tr>
             <td colspan="3"><img src="../image/line1.png" width="900px" height="1.5px" class="line1"></td>
