@@ -1,33 +1,32 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF=8">
-    <link rel="stylesheet" href="review.css"> 
-    <script src="./review_list.js"></script>
-    <script src="//code.jquery.com/jquery-latest.min.js"></script> 
+    <head>
+        <title>BBB 🏠</title>
+    <link rel="stylesheet" href="../review/review_list.css">
 </head>
-<body class="big">
-    <div class="box1">  
-        <a href="../main/main.html"><img src="../image/logo.png" id="logo" alt="logo image"></a>
-            <div class="topMenu">
-                <ul id="list">
-                    <li><a class="menuLink" href="../review/review_list.html">리뷰</a></li>
-                    <li class="line">|</li>
-                    <li><a class="menuLink" href="../offering/offering_list.html">매물</a></li>
-                    <li class="line">|</li>
-                    <li><a class="menuLink" href="#">공지사항</a></li>
-                </ul> 
-                <div class="login">
-                    <ul>
-                        <li><a class="login1" href="../main/signup.html">회원가입</a></li> 
-                        <li class="line">|</li>
-                        <li><a class="login2" href="../main/login.html">로그인</a></li>
-                    </ul>
-                </div>
-            </div>
-    </div>
+<body class="body">
+    <script type="text/javascript" src="./jquery.fade-in.js"></script>
+
+    <div class="menuBar">
+        <img src="../image/logo.png" id="logo" alt="logo image">
+        <div class="topMenu">
+          <ul id="list">
+            <li><a class="menuLink" href="../review/review_list.html">리뷰</a></li>
+            <li class="line">|</li>
+            <li><a class="menuLink" href="../offering/offering_list.html">매물</a></li>
+            <li class="line">|</li>
+            <li><a class="menuLink" href="#">공지사항</a></li>
+          </ul>
+          <div class="login">
+            <ul>
+              <li><a class="login1" href="../main/signup.html">회원가입</a></li>
+              <li class="line" id="login_line">|</li>
+              <li><a class="login2" href="../main/login.html">로그인</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     <div class="list_content">
-        <img src="../image/line.png" class="line1" alt="line" width="1000px" height="3px">
         <select name="sido" id="sido" onchange="getGugun(this.value);" >
             <option value="">---시도---</option> 
         </select> 
