@@ -35,12 +35,12 @@ body{
 }
 
 #logo{
-    width: 100px;
-    height: 50px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    padding: 5px;
-    margin-left: 10%;
+  width: 100px;
+  height: 50px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 5px;
+  margin-left: 150px;
 }
 
 .topMenu{
@@ -157,12 +157,13 @@ a:visited {
 }
 footer{  
   margin-top : 40px;
+  padding-top: 20px;
   left:0px; 
   bottom:0px; 
-  height:130px; 
+  height:150px; 
   width:100%; 
   background: rgb(238, 238, 238);   
-  color:rgb(75, 75, 75); 
+  color:rgb(143, 142, 142); 
 }
 .footer_content{
   line-height : 25px;
