@@ -178,7 +178,7 @@ a:visited {
   margin-bottom: 0px;
   height:1300px;
   width:100%;
-  background-color:#fab236;;
+  background-color:#fab236;
   position: relative;
 }
 
@@ -414,25 +414,18 @@ table#offering_table td{
     height:210px;
 }
 
-button{
-    background-color:white;
-    border-radius: 30px;
-    border: 3px solid #B7D1A6;
-    color:#000000;
-    cursor:pointer;
-    padding:10px 25px;
-    width: 150px;
-    font-family:'GmarketSansMedium';
-}
-
-button:focus{
-    outline:none;
-    background-color: #e0e2df;
-}
-
-#review_write_btn{
-  float : right;
+#go_to_review{
+  width : 150px;
+  height : 50px;
   margin-top: 1400px;
-  margin-right : 200px;
+  margin-left : 700px;
+  background-color:#fab236;
+  border : 0px;
+  border-radius: 12px;
+  outline : 0;
+  text-decoration : none;
+  box-shadow: 2px 2px #fff;
+  font-family:'jua';
+  font-size : 20px;
 }
 
