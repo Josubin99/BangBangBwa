@@ -3,10 +3,11 @@
 <head>
     <title>BBB Sign Up 🏠</title>
     <link rel="stylesheet" href="../CSS/main/signup.css"> 
+    <script src="./signup.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <a href="main.html"><img id="logo" src="../image/logo.png" alt="BBB"></a>
+        <a href="../main/main.html"><img id="logo" src="../image/logo.png" alt="BBB"></a>
         <form class="login_form" action="/signup" method="POST">
             <table id="login_table">
                 <tr>
@@ -39,17 +40,18 @@
 
                     <td style="text-align: left; padding-left:85px;">
                         <label for="CHK_PW">비밀번호 확인</label>
+                        <span id="check"></span>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="login_div">
-                            <input id="PW" name="password" type="password" class="login_input"/>
+                            <input id="PW" name="password" type="password" class="login_input" class="password" onchange="isSame()"/>
                         </div>
                     </td>
                     <td>
                         <div class="login_div">
-                            <input id="CHK_PW" type="password" class="login_input"/>
+                            <input id="CHK_PW" name="chk_password"type="password" class="login_input" class="password" onchange="isSame()"/>
                         </div>
                     </td>
                 </tr>
@@ -94,7 +96,7 @@
                     </td>
                     <td>
                         <div class="login_div">
-                            <input id="BIRTH" name="date" type="date" class="login_input"/>
+                            <input id="BIRTH" name="birth" type="text" class="login_input" value="YYYY-MM-DD" style="color:gray" onfocus="this.value=''; this.style.color='black'"/>
                         </div>
                     </td>
                 </tr>

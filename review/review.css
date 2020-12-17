@@ -35,12 +35,12 @@ body{
 }
 
 #logo{
-  width: 100px;
-  height: 50px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  padding: 5px;
-  margin-left: 150px;
+    width: 100px;
+    height: 50px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+    margin-left: 10%;
 }
 
 .topMenu{
@@ -77,6 +77,7 @@ body{
 
 .topMenu .menuLink:hover{
   color: rgb(71, 33, 33);
+  background-color: #E7D1C4;
 }
 
 a:visited {
@@ -96,39 +97,123 @@ a:visited {
 .login1{
   margin-right: 19px;
   text-decoration: none;
-  color: rgb(117, 115, 115);
 }
 
 .login2{
   margin-left: 19px;
   text-decoration: none;
-  color: rgb(117, 115, 115);
+}
+.col{
+    display:inline-block;
+    margin-top : 15px;
+}
+#room{
+    width : 250px;
+    height : 230px;
+    margin : 40px 117px 10px 0px;
+}
+#room3{
+    width : 250px;
+    height : 230px;
+    margin : 40px -20px 10px 0px;
+}
+#rank{
+    width:25px;
+    height:25px;
+    padding : 5px;
+    background: url('../image/rank.png')
+}
+.rank1{
+    width : 300px;
+    margin: 0px 50px 0px 26px;
+}
+.rank2{
+    width : 300px;
+    margin : -40px 50px 0px 400px;
+}
+.rank3{
+    width : 300px;
+    margin : -40px 30px 0px 780px;
 }
 
-
-/*----------------여기까지 위에 메뉴바 css------------------*/
-.write_body{
-  width : 750px;
-  margin : 50px 50px 10px 400px;
+.addr1{
+    margin : 10px 100px 10px 15px; 
+}
+.addr2{
+    margin : -36px 10px 10px 395px; 
+}
+.addr3{
+    margin : -36px 0px 10px 767px; 
+}
+.review_button{
+    background-color: #B7D1A6;    
+    border : none;
+    border-radius: 30px;
+    border-width : 10px;
+    border-color: #B7D1A6;
+    color:white;
+    cursor:pointer;
+    padding:10px 25px;
+    width: 65px;
+    margin-left : 450px;
+    font-family: 'GmarketSansMedium';
+    position:fixed;
+    left:auto;
+    bottom:20px;
+    box-shadow : 5px 5px 5px gray;
+}
+.review_list:link{
+    color : white;
+}
+.review_list:visited{
+    color : white;
+}
+.review_button:focus{
+    outline:none;
+    background-color: #B7D1A6;
+}
+.review_detail{
+    display : inline;
+}
+.room_review{
+    margin : 40px 0px;
+}
+.room_addr{
+    margin : 10px 70px;
+}
+.detail_table{
+    margin-top : 30px;
+}
+.room_title{
+    margin-top:30px;
+    font-size: 25px;
+}
+.content{
+    padding: 0px 0px 15px 20px;
+}
+.content_detail{
+    padding: 0px 0px 15px 20px;
+    vertical-align : top;
+}
+.search_button{
+    float:right;
+    align-items: center;
+    background-color: #C69674;
+    border : none;
+    color : white;
+    margin-top : 6px;
+    width :80px;
+    height : 23px;
+    outline : none;
 }
 .write_table{
-  width : 750px;
+    margin : 20px auto 10px auto;
 }
 .line1{
     margin-bottom : 5px;
 }
-textarea{
-  resize : none;
-  width : 750px;
-  height : 600px;
-  border-color : #C69674;
-  border-width :1.7px ;
-  outline : none;
-  font-family: 'GmarketSansMedium';
-
-}
 .write_content{
-    width : 750px;
+    width : 850px;
     height : 600px;
     margin : 10px auto 20px auto;
     padding : 10px 20px;
@@ -166,6 +251,31 @@ textarea{
     margin : 10px 0px;
     font-family: 'GmarketSansMedium';
 }
+.detail_table{
+    margin : 50px auto;
+}
+.detail_rank{
+    width : 200px;
+}
+.detail_addr{
+    font-size : 13px;
+}
+.detail_title{
+    font-size : 30px;
+}
+.detail{
+    width : 500px;
+    margin : 0px auto 10px auto;
+    line-height : 50px;
+}
+.wrap{
+    max-width: 400px;
+    margin: 0 auto; /* 화면 가운데로 */
+    background-color: #fff;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
 .rating .rate_radio {
     position: relative;
     display: inline-block;
@@ -193,38 +303,17 @@ textarea{
 .rating .rate_radio:checked + label {
     background-image: url("../image/rank.png");
 }
-.search_button{
-    float:right;
-    align-items: center;
-    background-color: #C69674;
-    border : none;
-    color : white;
-    margin-top : 6px;
-    width :80px;
-    height : 23px;
-    outline : none;
-}
-input{
-  border:none;
-  border-right:0px; 
-  border-top:0px; 
-  border-left:0px; 
-  border-bottom:0px;
-  outline : none;
-  font-family: 'GmarketSansMedium';
-}
 footer{  
-  margin-top : 40px;
-  padding-top: 20px;
-  left:0px; 
-  bottom:0px; 
-  height:150px; 
-  width:100%; 
-  background: rgb(238, 238, 238);   
-  color:rgb(143, 142, 142); 
+    margin-top : 40px;
+    left:0px; 
+    bottom:0px; 
+    height:130px; 
+    width:100%; 
+    background: rgb(238, 238, 238);   
+    color:rgb(75, 75, 75); 
 }
 .footer_content{
-  line-height : 25px;
-  padding-left : 520px;
-  padding-top : 13px;
+    line-height : 25px;
+    padding-left : 520px;
+    padding-top : 13px;
 }

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
 <title>BBB 🏠</title>
     <link rel="stylesheet" href="../CSS/review/review_detail.css">
     <script type="text/javascript" src="../review/review_list.js"></script>
+   <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>-->
 </head>
 <body class="body">
     <script type="text/javascript" src="./jquery.fade-in.js"></script>
@@ -16,7 +19,7 @@
             <li class="line">|</li>
             <li><a class="menuLink" href="../offering/offering_list.html">매물</a></li>
             <li class="line">|</li>
-            <li><a class="menuLink" href="#">공지사항</a></li>
+            <li><a class="menuLink" href="../main/notice.html">공지사항</a></li>
           </ul>
           <div class="login">
             <ul>
@@ -26,10 +29,18 @@
             </ul>
           </div>
         </div>
-      </div>
+    </div>
+
     <table class="detail_table">
         <tr>
-            <td colspan="4"><img src="../image/room5.png" class="room4" alt="room4" width="500px" height="400px"></td>
+            <td colspan="4">
+                <ul class="bxslider">
+                    <!--클래스 이름 변경하지 않기-->
+                    <li><a href="#"><img src="../image/room4.png" alt="" width="500px" height="400px"></a></li>
+                    <li><a href="#"><img src="../image/room5.JPG" alt="" width="500px" height="400px"></a></li>
+                    <li><a href="#"><img src="../image/room3.png" alt="" width="500px" height="400px"></a></li>
+                </ul> 
+            </td>
         </tr>
         <tr>
             <td rowspan="2" style="line-height: 20px;"><img src="../image/profile.png" class="profile" alt="profile" widt="40px" height="50px"></td>
@@ -60,6 +71,12 @@
             아니어서 여자분들이 살기에도 안전합니다. 그럼 010-6627-6451로 연락 주세요.
         </div>
     </div>
-
+    <footer>
+        <div class="footer_content">        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright BangBangBwa Inc. All right reserved.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이용약관 및 개인정보 처리방침<br>
+        상호 : 방방봐 | 대표 : 김민경 강문영 조수빈 | 전화번호 : 02-970-9143 <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;주소 : 서울특별시 노원구 공릉동 공릉로 232</div>
+    </footer>
 </body>
 </html>

@@ -45,7 +45,7 @@ html {
     margin-top: 2px;
     margin-bottom: 2px;
     padding: 5px;
-    margin-left: 10%;
+    margin-left: 150px;
 }
 
 .topMenu{
@@ -430,4 +430,18 @@ table#offering_table td{
   font-family:'jua';
   font-size : 20px;
 }
-
+footer{  
+  margin-top : 0px;
+  padding-top: 20px;
+  left:0px; 
+  bottom:0px; 
+  height:150px; 
+  width:100%; 
+  background: rgb(238, 238, 238);   
+  color:rgb(143, 142, 142); 
+}
+.footer_content{
+  line-height : 25px;
+  padding-left : 520px;
+  padding-top : 13px;
+}

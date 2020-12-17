@@ -34,16 +34,14 @@ body{
     /*flex-direction: row;
     flex-wrap: nowrap;*/
 }
-
 #logo{
-    width: 100px;
-    height: 50px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    padding: 5px;
-    margin-left: 10%;
+  width: 100px;
+  height: 50px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 5px;
+  margin-left: 150px;
 }
-
 .topMenu{
   margin-top: 10px;
   margin-left: -30px;
@@ -183,5 +181,20 @@ a:visited {
 #review_btn:focus{
     outline:none;
     background-color: #B7D1A6;
-    text-decoration: none;
+}
+
+footer{  
+  margin-top : 40px;
+  padding-top: 20px;
+  left:0px; 
+  bottom:0px; 
+  height:150px; 
+  width:100%; 
+  background: rgb(238, 238, 238);   
+  color:rgb(143, 142, 142); 
+}
+.footer_content{
+  line-height : 25px;
+  padding-left : 520px;
+  padding-top : 13px;
 }

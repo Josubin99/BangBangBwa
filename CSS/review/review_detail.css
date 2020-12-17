@@ -17,6 +17,7 @@ body{
 
 .menuBar{
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
@@ -35,14 +36,13 @@ body{
 }
 
 #logo{
-    width: 100px;
-    height: 50px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    padding: 5px;
-    margin-left: 10%;
+  width: 100px;
+  height: 50px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 5px;
+  margin-left: 150px;
 }
-
 .topMenu{
   margin-top: 10px;
   margin-left: -30px;
@@ -107,12 +107,14 @@ a:visited {
 
 
 /*----------------여기까지 위에 메뉴바 css------------------*/
+li { list-style: none; }
+
 .detail_table{
     margin : 50px auto;
+    width : 500px;
+    position:relative; z-index: 1;
 }
-.detail_table{
-    margin-top : 30px;
-}
+
 .detail_rank{
     width : 200px;
 }
@@ -132,4 +134,19 @@ a:visited {
     height:25px;
     padding : 5px;
     background: url('../image/rank.png')
+}
+footer{  
+  margin-top : 40px;
+  padding-top: 20px;
+  left:0px; 
+  bottom:0px; 
+  height:150px; 
+  width:100%; 
+  background: rgb(238, 238, 238);   
+  color:rgb(143, 142, 142); 
+}
+.footer_content{
+  line-height : 25px;
+  padding-left : 520px;
+  padding-top : 13px;
 }
