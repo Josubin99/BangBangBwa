@@ -19,73 +19,22 @@
             <li class="line">|</li>
             <li><a class="menuLink" href="../main/notice.html">공지사항</a></li>
           </ul>
-          <div class="login">
-            <ul>
-              <li><a class="login1" href="../main/signup.html">회원가입</a></li>
-              <li class="line" id="login_line">|</li>
-              <li><a class="login2" href="../main/login.html">로그인</a></li>
-            </ul>
-          </div>
         </div>
     </div>
-    <table class="write_table">
-        <tr>
-            <td>Title</td>
-            <td>구해줘 홈즈에 나온 바로 그 방!</td> 
-        </tr>
-        <tr>
-            <td colspan="3"><img src="../image/line1.png" width="900px" height="1.5px" class="line1"></td>
-        </tr>
-        <tr>
-            <td>Location</td>
-            <td>
-                <input type="text" id="sample4_roadAddress" placeholder="도로명주소">
-            </td> 
-            <td><button class="search_button" onclick="button1_click()">search</button></td>
-        </tr>
-        <tr>
-            <td colspan="3"><img src="../image/line1.png" width="900px" height="1.5px" class="line1"></td>
-        </tr>
-        <tr>
-            <td colspan="3"> 
-                <div class="rating">
-                    <!-- 해당 별점을 클릭하면 해당 별과 그 왼쪽의 모든 별의 체크박스에 checked 적용 -->
-                    <input type="checkbox" name="rating" id="rating1" value="1" class="rate_radio" title="1점">
-                    <label for="rating1"></label>
-                    <input type="checkbox" name="rating" id="rating2" value="2" class="rate_radio" title="2점">
-                    <label for="rating2"></label>
-                    <input type="checkbox" name="rating" id="rating3" value="3" class="rate_radio" title="3점" >
-                    <label for="rating3"></label>
-                    <input type="checkbox" name="rating" id="rating4" value="4" class="rate_radio" title="4점">
-                    <label for="rating4"></label>
-                    <input type="checkbox" name="rating" id="rating5" value="5" class="rate_radio" title="5점">
-                    <label for="rating5"></label>
-                </div>
-            </td>
-        </tr>
-    </table>
-    <div class="write_content">
-        전체적으로 집이 방음이 잘 돼서 조용합니다. 
-        바퀴벌레가 가끔 나오니까 조심하세요
-        그래도 집주인분이 친절하셔서 2년넘게 사는동안 마찰은 한번도 없었습니다. 
-        다만 관리비가 시설에 비해 많이 나오네요.
-        옵션은 풀옵션이라 몸만 오시면 될 거 같습니다. 
-    </div>
+    <form action="/board" method="post">
     <div class="write_body">
         <table class="write_table">
             <tr>
-                <td>Title</td>
-                <td>구해줘 홈즈에 나온 바로 그 방!</td> 
+                <td><label>Title</label></td>
+                <td><input type="text" name="title" /></td> 
             </tr>
             <tr>
                 <td colspan="3"><img src="../image/line1.png" width="750px" height="1.5px" class="line1"></td>
             </tr>
             <tr>
-                <td>Location</td>
-                <td>
-                    <input type="text" id="sample4_roadAddress">
-                </td> 
-                <td><button class="search_button" onclick="button1_click()">search</button></td>
+                <td><label>Location</label></td>
+                <td><input type="text" id="sample4_roadAddress" name="location"></td> 
+                <td><input type="button" class="search_button" onclick="button1_click()" value="주소 찾기"></td>
             </tr>
             <tr>
                 <td colspan="3"><img src="../image/line1.png" width="750px" height="1.5px" class="line1"></td>
@@ -108,10 +57,7 @@
                 </td>
             </tr>
         </table>
-        <form>
-            <textarea class="wrtie_content">
-            </textarea>
-        </form>
+        <textarea name="content" class="write_content"></textarea>
 
         <table class="file_table">
             <tr>
@@ -127,9 +73,10 @@
             </tr>
         </table>
         <div class="write_registerBtn">
-            <button class="register_button">등록</button>
+            <input type="submit" class="register_button" />
         </div>
     </div>
+    </form>
     <footer>
         <div class="footer_content">        
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright BangBangBwa Inc. All right reserved.<br>

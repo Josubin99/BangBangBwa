@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>BBB 🏠</title>
-    <link rel="stylesheet" href="../CSS/review/review_list.css">
+<head>
+<title>BBB 🏠</title>
+    <link rel="stylesheet" href="../CSS/review/review_write.css">
+    <script type="text/javascript" src="../review/review_list.js"></script>
+    <script type="text/javascript" src="../review/review_write.js"></script>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 <body class="body">
-    <script type="text/javascript" src="./jquery.fade-in.js"></script>
 
     <div class="menuBar">
         <a href="../main/main.html"><img id="logo" src="../image/logo.png" alt="BBB"></a>
@@ -25,89 +27,22 @@
             </ul>
           </div>
         </div>
-      </div>
-    <div class="list_content">
-        <select name="sido" id="sido" onchange="getGugun(this.value);" >
-            <option value="">---시도---</option> 
-        </select> 
-        <select name="gugun1" id="gugun"></select>
-        <div class="room">
-            <div class="room_col1">
-                <img src="../image/room1.png" id="room" alt="room">
-                <img src="../image/room2.png" id="room" alt="room">
-                <img src="../image/room3.png" id="room3" alt="room">
-                <div class="rank">
-                    <div class="rank1">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png"id="rank" alt="rank">
-                    </div>
-                    <div class="rank2">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank_blank.png" id="rank" alt="rank">
-                        <img src="../image/rank_blank.png"id="rank" alt="rank">
-                    </div>
-                    <div class="rank3">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank_blank.png" id="rank" alt="rank">
-                        <img src="../image/rank_blank.png"id="rank" alt="rank">
-                    </div>
-                </div>
-                <div class="addr">
-                    <div class="addr1">서울시 노원구 공릉동 47-1번지</div>
-                    <div class="addr2">서울시 송파구 망원동 512-10</div>
-                    <div class="addr3">서울시 광진구 자양동 양지 1길</div>
-                </div>
-            </div>
-            <div class="room_col2">
-                <img src="../image/room1.png" id="room" alt="room">
-                <img src="../image/room2.png" id="room" alt="room">
-                <img src="../image/room3.png" id="room3" alt="room"> 
-                <div class="rank">
-                    <div class="rank1">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png"id="rank" alt="rank">
-                    </div>
-                    <div class="rank2">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank_blank.png" id="rank" alt="rank">
-                        <img src="../image/rank_blank.png" id="rank" alt="rank">
-                        <img src="../image/rank_blank.png"id="rank" alt="rank">
-                    </div>
-                    <div class="rank3">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank.png" id="rank" alt="rank">
-                        <img src="../image/rank_blank.png"id="rank" alt="rank">
-                    </div>
-                </div>
-                <div class="addr">
-                    <div class="addr1">서울시 노원구 공릉동 47-1번지</div>
-                    <div class="addr2">서울시 송파구 망원동 512-10</div>
-                    <div class="addr3">서울시 광진구 자양동 양지 1길</div>
-                </div>
-            </div>
-        </div>       
-        <div class="review_button"><a href="../review/review_write.html" id="review_btn">리뷰작성</a></div>
-
-    </div>  
-    <footer>
-        <div class="footer_content">        
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright BangBangBwa Inc. All right reserved.<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이용약관 및 개인정보 처리방침<br>
-        상호 : 방방봐 | 대표 : 김민경 강문영 조수빈 | 전화번호 : 02-970-9143 <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;주소 : 서울특별시 노원구 공릉동 공릉로 232</div>
-    </footer>
-</body>
-</html>
+    </div>
+    <table id="review_table">
+      <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>LOCATION</th>
+        <th>RATING</th>
+      </tr>
+      <% data.forEach(function(item, index) { %>
+      <tr>
+        <td><%= item.id %> </td>
+        <td><%= item.title %> </td>
+        <td><%= item.location %> </td>
+        <td><%= item.rating %> </td>
+      </tr>
+      <% }); %>
+    </table>
+   </body>
+   </html> 

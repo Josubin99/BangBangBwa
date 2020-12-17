@@ -39,7 +39,11 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 app.get('/', function(req,res){
-    res.sendFile(__dirname+'/main/main.html');
+    if (!req.session.loggedin) {
+        res.sendFile(path.join(__dirname + '/main/main.html'));
+     } else {
+        res.sendFile(path.join(__dirname + '/main/main_login.html'));
+     }
 });
 
 app.post('/signup', function(req,res){
@@ -79,7 +83,7 @@ app.post('/login', function(req,res){
             if(results.length>0){
                 req.session.loggedin=true;
                 req.session.loginID=loginID;
-                res.redirect('/main');
+                res.redirect('/main_login');
                 res.end();
             } else{
                 res.send('<script type="text/javascript"> alert("Login Error"); history.back();</script>');
@@ -92,15 +96,30 @@ app.post('/login', function(req,res){
 
 });
 
-app.get('/main', restrict, function(req, res) {
+ app.get('/main_login', restrict, function(req, res) {
     if (req.session.loggedin) {
-       res.sendFile(path.join(__dirname + '/main/main.html'));
+       res.sendFile(path.join(__dirname + '/main/main_login.html'));
     } else {
        res.send('Please login to view this page!');
        res.end();
     }
  });
  
+
+  app.post('/logout', function(request, response) {
+    request.session.loggedin = false;
+    response.redirect('/main');
+    response.end();
+  });
+
+  app.get('/main', restrict, function(req, res) {
+    if (!req.session.loggedin) {
+        res.sendFile(path.join(__dirname + '/main/main.html'));
+     } else {
+        res.sendFile(path.join(__dirname + '/main/main_login.html'));
+     }
+    res.sendFile(__dirname+'/main/main.html');
+ });
 
 
 
