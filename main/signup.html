@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>BBB Sign Up 🏠</title>
-    <link rel="stylesheet" href="signup.css"> 
+    <link rel="stylesheet" href="../CSS/main/signup.css"> 
 </head>
 <body>
     <div class="wrapper">
         <a href="main.html"><img id="logo" src="../image/logo.png" alt="BBB"></a>
-        <form class="login_form">
+        <form class="login_form" action="/signup" method="POST">
             <table id="login_table">
                 <tr>
                     <td style="text-align: left; padding-left:85px;">
@@ -20,15 +20,14 @@
                 </tr>
                 <tr>
                     <td >
-                        <div id="signupID_div">
-                            <input id="signupID" type="text" name="ID" class="login_input"/>
-                            <input id="btn" type="submit" value="중복확인" class="BTN"/>
+                        <div class="login_div">
+                            <input id="ID" name="id" type="text" class="login_input"/><br>
                         </div>
                     </td>
 
                     <td>
                         <div class="login_div">
-                            <input id="Email" type="text" class="login_input"/>
+                            <input id="Email" name="email" type="text" class="login_input"/>
                         </div>
                     </td>
 
@@ -45,7 +44,7 @@
                 <tr>
                     <td>
                         <div class="login_div">
-                            <input id="PW" type="password" class="login_input"/>
+                            <input id="PW" name="password" type="password" class="login_input"/>
                         </div>
                     </td>
                     <td>
@@ -65,9 +64,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <div id="signupID_div">
-                            <input id="signupID" type="text" name="PHONE_NUM" class="login_input"/>
-                            <input id="btn" type="submit" value="본인인증" class="BTN"/>
+                        <div id="login_div">
+                            <input id="PHONE" name="phone" type="text" class="login_input"/>
                         </div>                       
                     </td>
                     <td>
@@ -91,19 +89,19 @@
                 <tr>
                     <td>
                         <div class="login_div">
-                            <input id="NAME" type="text" class="login_input"/>
+                            <input id="NAME" name="name" type="text" class="login_input"/>
                         </div>
                     </td>
                     <td>
                         <div class="login_div">
-                            <input id="BIRTH" type="date" class="login_input"/>
+                            <input id="BIRTH" name="date" type="date" class="login_input"/>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td class="signup_td" colspan="2" height="80px">
                         <div class="button_div">
-                            <button id="signup_button">회원가입</button>
+                            <input id="signup_button" type="submit" value="회원가입">
                         </div>
                     </td>
                 </tr>
