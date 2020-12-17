@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font-family:'GmarketSansMedium';
+}
+
+.wrapper{
+    width:900px;
+    height:700px;
+    border:3px solid #C69674;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin:130px auto;
+}
+
+#logo{
+    width:18%;
+    margin:40px auto;
+    display:block;
+}
+
+.login_div{
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+.button_div{
+    margin-bottom:15px;
+    text-align:center;
+}
+
+#login_table{
+    margin: 10px auto;
+}
+
+.login_input{
+    padding:10px;
+    width:250px;
+    height:16px;
+    border:2px solid #C69674;
+    border-radius: 10px;
+}
+
+.login_input:focus{
+    border:2px solid #B7D1A6;
+    outline:none;
+}
+
+#signup_button{
+    background-color:#C69674;
+    border-radius: 30px;
+    border:none;
+    color:white;
+    cursor:pointer;
+    padding:10px 25px;
+    width: 110px;
+    margin-left:10px;
+    font-family:'GmarketSansMedium';
+}
+
+#signup_button:focus{
+    outline:none;
+    background-color: #B7D1A6;
+}
+
+#signupID_div{
+    text-align: center;
+    margin-top:10.7px;
+    margin-bottom:30px;
+    width:250px;
+    padding:10px;
+    height:16px;
+    border:2px solid #C69674;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+#signupID{
+    background-color:transparent;
+    padding:2px;
+    width:150px;
+    border: 0;  
+    font-size: 11pt;
+    margin-bottom: 2px;
+    float:left;
+}
+
+#btn{
+    background-color:#C69674;
+    border-radius: 30px;
+    border:none;
+    color:white;
+    cursor:pointer;
+    font-size:5pt;
+    height:20px;
+    width: 65px;
+    font-family:'GmarketSansMedium';
+}
+
+table#login_table td{
+    width:350px;
+    text-align: center;
+}
+
+input[type=radio]{
+    background-color: #FFFF;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-left: 16px;
+    border: 1px solid #C69674;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    outline:none;
+}
+
+input[type=radio]:checked{
+    background-color:#B7D1A6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-left: 16px;
+    border: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+}
+
+#check{
+    color:#698f50;
+    font-size:10px;
+    text-align:right;
+}

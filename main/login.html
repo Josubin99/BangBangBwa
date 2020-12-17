@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>BBB Login 🏠</title>
-    <link rel="stylesheet" href="login.css"> 
+    <link rel="stylesheet" href="../CSS/main/login.css"> 
 </head>
 <body>
     <div class="wrapper">
-        <a href="main.html"><img id="logo" src="../image/logo.png" alt="BBB"></a>
-        <form class="login_form">
+        <a href="../main/main.html"><img id="logo" src="../image/logo.png" alt="BBB"></a>
+        <form class="login_form" action="/login" method="POST">
             <table id="login_table">
                 <tr>
                     <td colspan="2" >
@@ -17,31 +17,31 @@
                 <tr>
                     <td colspan="2">
                         <div class="login_div">
-                            <input id="ID" type="text" class="login_input"/>
+                            <input name="loginID" type="text" class="login_input"/>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <label for="password">비밀번호</label>
+                        <label name="loginPW">비밀번호</label>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <div class="login_div">
-                            <input id="PW" type="password" class="login_input"/>
+                            <input id="loginPW" name="loginPW" type="password" class="login_input"/>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td class="login_td">
                         <div class="button_div">
-                            <button id="login_button">로그인</button>
+                            <input type="submit" id="login_button" value="로그인">
                         </div>
                     </td>
                     <td class="signup_td">
                         <div class="button_div">
-                            <button id="signup_button">회원가입</button>
+                            <button id="signup_button"><a href="../main/signup.html">회원가입</a></button>
                         </div>
                     </td>
                 </tr>
