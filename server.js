@@ -1,10 +1,12 @@
+var fs = require('fs');
 var express = require('express');
 var path = require('path');
 var app = express();
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
 var session=require('express-session');
-const { resourceLimits } = require('worker_threads');
+var ejs=require('ejs');
+
 
 var conn = mysql.createConnection({
     host    :   'localhost',
@@ -46,6 +48,8 @@ app.get('/', function(req,res){
      }
 });
 
+//signup
+
 app.post('/signup', function(req,res){
     var ID = req.body.id;
     var PW = req.body.password;
@@ -69,6 +73,8 @@ app.post('/signup', function(req,res){
 
 });
 
+
+//login
 app.get('/login', function(req,res){
     res.sendFile(__dirname+'/main/login.html');
 });
@@ -118,8 +124,41 @@ app.post('/login', function(req,res){
      } else {
         res.sendFile(path.join(__dirname + '/main/main_login.html'));
      }
-    res.sendFile(__dirname+'/main/main.html');
  });
+
+ //board
+ app.get('/review_write', function (request, response) {
+     if(request.session.loggedin){
+        fs.readFile(__dirname + '/review/review_write.html', 'utf8', function (error, data) {
+            response.send(data);
+        });
+     }
+     else{
+        response.send('<script type="text/javascript"> alert("You can access after login "); history.back();</script>');
+     }
+});
+
+app.post('/review_write', function (request, response) {
+    var body = request.body;
+
+    conn.query('INSERT INTO posts (TITLE, LOCATION, RATING, CONTENT) VALUES (?, ?, ?, ?)', [
+        body.title, body.location, body.rating, body.content
+    ], function () {
+        response.redirect('/review');
+    });
+});
+
+app.get('/review', function (request, response) { 
+    fs.readFile(__dirname + '/review/review_list.html', 'utf8', function (error, data) {
+        conn.query('SELECT * FROM posts', function (error, results) {
+            response.send(ejs.render(data, {
+                data: results
+            }));
+        });
+    });
+});
+
+
 
 
 
