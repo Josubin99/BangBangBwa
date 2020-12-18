@@ -8,11 +8,6 @@
     <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 <body class="body">
-    <div id="review_list">
-      <img src="../image/withBBB.png" alt="withUS" id="withBBB">
-      <img src="../image/iphone.png" alt="iphone" id="iphone">
-      <img src="../image/explain.png" alt="explain" id="explain">
-    </div>
 
     <div class="menuBar">
         <a href="/main"><img id="logo" src="../image/logo.png" alt="BBB"></a>
@@ -26,19 +21,29 @@
           </ul>
         </div>
     </div>
-    <table id="review_table">
+
+    <div id="review_list">
+      <img src="../image/withBBB.png" alt="withUS" id="withBBB">
+      <img src="../image/iphone.png" alt="iphone" id="iphone">
+      <img src="../image/explain.png" alt="explain" id="explain">
+    </div>
+
+    <table class="review_table">
+      <tr class="review_table_tr">
+        <td id="table_title" colspan="4">Review LIST 📝</td>
+      </tr>
       <tr>
-        <th>NO</th>
-        <th>제목</th>
-        <th>위치</th>
-        <th>별점</th>
+        <th width=80px;>NO</th>
+        <th width=500px;>제목</th>
+        <th width=500px;>위치</th>
+        <th id="star_th" width=70px;>⭐</th>
       </tr>
       <% data.forEach(function(item, index) { %>
       <tr>
-        <td><%= item.NO %> </td>
+        <td id="NO_td"><%= item.NO %> </td>
         <td><%= item.TITLE %> </td>
         <td><%= item.LOCATION %> </td>
-        <td><%= item.RATING %> </td>
+        <td id="RATING_td"><%= item.RATING %> </td>
       </tr>
       <% }); %>
     </table>
