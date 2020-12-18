@@ -10,10 +10,10 @@
 <body class="body">
 
     <div class="menuBar">
-        <a href="../main/main.html"><img id="logo" src="../image/logo.png" alt="BBB"></a>
+        <a href="/main"><img id="logo" src="../image/logo.png" alt="BBB"></a>
         <div class="topMenu">
           <ul id="list">
-            <li><a class="menuLink" href="../review/review_list.html">리뷰</a></li>
+            <li><a class="menuLink" href="/review">리뷰</a></li>
             <li class="line">|</li>
             <li><a class="menuLink" href="../offering/offering_list.html">매물</a></li>
             <li class="line">|</li>
@@ -21,12 +21,12 @@
           </ul>
         </div>
     </div>
-    <form action="/board" method="post">
+    <form method="post">
     <div class="write_body">
         <table class="write_table">
             <tr>
                 <td><label>Title</label></td>
-                <td><input type="text" name="title" /></td> 
+                <td><input type="text" name="title"/></td> 
             </tr>
             <tr>
                 <td colspan="3"><img src="../image/line1.png" width="750px" height="1.5px" class="line1"></td>
@@ -57,7 +57,7 @@
                 </td>
             </tr>
         </table>
-        <textarea name="content" class="write_content"></textarea>
+        <textarea type=text name="content" cols="100", wrap="hard"></textarea>
 
         <table class="file_table">
             <tr>

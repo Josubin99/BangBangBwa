@@ -2,18 +2,23 @@
 <html>
 <head>
 <title>BBB 🏠</title>
-    <link rel="stylesheet" href="../CSS/review/review_write.css">
+    <link rel="stylesheet" href="../CSS/review/review_list.css">
     <script type="text/javascript" src="../review/review_list.js"></script>
     <script type="text/javascript" src="../review/review_write.js"></script>
     <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 <body class="body">
+    <div id="review_list">
+      <img src="../image/withBBB.png" alt="withUS" id="withBBB">
+      <img src="../image/iphone.png" alt="iphone" id="iphone">
+      <img src="../image/explain.png" alt="explain" id="explain">
+    </div>
 
     <div class="menuBar">
-        <a href="../main/main.html"><img id="logo" src="../image/logo.png" alt="BBB"></a>
+        <a href="/main"><img id="logo" src="../image/logo.png" alt="BBB"></a>
         <div class="topMenu">
           <ul id="list">
-            <li><a class="menuLink" href="../review/review_list.html">리뷰</a></li>
+            <li><a class="menuLink" href="/review">리뷰</a></li>
             <li class="line">|</li>
             <li><a class="menuLink" href="../offering/offering_list.html">매물</a></li>
             <li class="line">|</li>
@@ -23,19 +28,21 @@
     </div>
     <table id="review_table">
       <tr>
-        <th>ID</th>
-        <th>TITLE</th>
-        <th>LOCATION</th>
-        <th>RATING</th>
+        <th>NO</th>
+        <th>제목</th>
+        <th>위치</th>
+        <th>별점</th>
       </tr>
       <% data.forEach(function(item, index) { %>
       <tr>
-        <td><%= item.id %> </td>
-        <td><%= item.title %> </td>
-        <td><%= item.location %> </td>
-        <td><%= item.rating %> </td>
+        <td><%= item.NO %> </td>
+        <td><%= item.TITLE %> </td>
+        <td><%= item.LOCATION %> </td>
+        <td><%= item.RATING %> </td>
       </tr>
       <% }); %>
     </table>
+
+    <div class="review_button"><a href="/review_write" id="review_btn">리뷰쓰기</a></div>
    </body>
    </html> 
